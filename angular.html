@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html lang="en" ng-app="UazonApp">
+<!--Creacion de app con AngularJS-->
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <script src="./Angular/angular.js"></script>
+    <script src="./jquery/jquery-3.4.1.slim.min.js"></script>
+    <script src="./js/bootstrap.min.js"></script>
+    <link rel="stylesheet" href="./css/bootstrap.min.css">
+    <title>Document</title>
+    <script src="./Control.js"></script>
+    <meta name="description" content="Angular">
+</head>
+
+<body ng-controller="FirstController" ng-init="var = 'Toda la informacion va aqui:'">
+    <!--Llamar al controlador indicado->ng-controller-->
+    <div>
+        <p>{{var}}</p>
+        <input type="text" ng-model="libro" placeholder="Indicar Libro" id="of1">
+        <input type="text" ng-model="autor" placeholder="Indicar Autor" id="of2">
+        <button ng-click="Mostrar()">Buscar</button>
+        <button style="display: none;" id="otro" ng-click="nuevo()">Ingresar Otro</button>
+        <ul>
+            <li ng-show="mostrar" style="border-style: double;list-style: none;">
+                <!--Mostrar todos los objetos dentro del JSON-->
+                {{'Libro: '+libro}}
+                <br> {{'Autor: '+autor}}
+                <br> {{'Descripcion: '+Descripcion}}
+            </li>
+        </ul>
+    </div>
+</body>
+
+</html>

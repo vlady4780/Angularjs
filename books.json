@@ -1,0 +1,13 @@
+{
+    "Libros": [{
+            "Nombre": "Tungsteno",
+            "Autor": "Cesar Vallejo",
+            "Descripcion": "El tungsteno es una novela social escrita por el escritor peruano César Vallejo "
+        },
+        {
+            "Nombre": "El Aleph",
+            "Autor": "Jorge Luis Borges",
+            "Descripcion": "El Aleph es uno de los libros de cuentos más representativos del escritor argentino Jorge Luis Borges."
+        }
+    ]
+}
